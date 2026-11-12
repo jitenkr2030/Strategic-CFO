@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block title %}Sign in · Strategic CFO{% endblock %}{% block heading %}Welcome back{% endblock %}
+{% block content %}<div class="row justify-content-center mt-5"><div class="col-md-5"><div class="card p-4"><h5>Sign in to your workspace</h5><form method="post">{% csrf_token %}{{ form.as_p }}<button class="btn btn-primary w-100 mt-3">Sign in</button></form><p class="muted mt-3 mb-0">Create a user first with <code>python manage.py createsuperuser</code>.</p></div></div></div>{% endblock %}
